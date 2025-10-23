@@ -1,43 +1,42 @@
-Gold & Silver Price Analysis (2018–2023)
-🔹 Overview
-This project analyzes 5 years of historical gold and silver price data (2018–2023), exploring long-term trends and statistical relationships between the two commodities.
+# Gold & Silver Price Analysis (2018–2023)
+---
 
-In addition to traditional batch analysis, the project also simulates a real-time streaming pipeline — consuming historical data row by row with artificial delays to mimic live data feeds. This allows us to experiment with concepts from real-time data engineering (Kafka/Spark Streaming) without the need for heavy infrastructure.
+## Overview
+This project analyzes 5 years of historical gold and silver price data (2018–2023), exploring trends and statistical relationships between the two commodities.
 
-🔹 Features
-Batch Analysis
+In addition to batch analysis, the project includes a **row-by-row simulation of streaming data** with artificial delays to mimic live updates. This allows experimentation with streaming concepts without the need for heavy infrastructure.
 
-Cleaned and preprocessed historical gold & silver datasets.
+---
 
-Conducted statistical correlation analysis using Karl Pearson’s coefficient.
+## Features
 
-Visualized long-term price trends using matplotlib.
+### Batch Analysis
+- Cleaned and preprocessed historical gold and silver datasets.  
+- Performed statistical correlation analysis using Pearson’s coefficient.  
+- Visualized long-term price trends using matplotlib.
 
-Streaming Simulation
+### Streaming Simulation
+- Replayed historical data row by row with a delay to simulate live updates.  
+- Computed incremental Pearson correlation on the fly.  
+- Updated plots in real-time to demonstrate dynamic data flow.
 
-Replayed historical data with a delay (time.sleep) to simulate a live price feed.
+---
 
-Processed each incoming record in “streaming mode.”
+## Key Learnings
+- Difference between batch processing (full dataset at once) and row-wise streaming.  
+- Demonstrated basic streaming concepts in Python without using heavy frameworks.  
+- Built a minimal proof-of-concept pipeline for financial time-series analysis.
 
-Plotted real-time updates to visualize dynamic data flow.
+---
 
-🔹 Key Learnings
-Difference between batch processing (full dataset at once) and stream processing (row-by-row).
+## Tech Stack
+- **Languages:** Python (Pandas, NumPy)  
+- **Visualization:** Matplotlib  
+- **Concepts:** Batch vs. streaming, correlation analysis, real-time data simulation
 
-Simulated the role of Kafka producers/consumers by generating incremental events from CSV files.
+---
 
-Built a minimal proof-of-concept pipeline showing how financial time-series data can be analyzed both historically and in real-time.
-
-🔹 Tech Stack
-Languages: Python (Pandas, NumPy)
-
-Visualization: Matplotlib
-
-Concepts: Batch vs. Streaming, Correlation Analysis, Real-time Data Simulation
-
-🔹 Future Extensions
-Replace simulated stream with a real Kafka producer/consumer setup.
-
-Scale the pipeline to process multiple commodity feeds in parallel.
-
-Integrate with cloud-based data warehouses (AWS Kinesis, GCP Pub/Sub).
+## Future Extensions
+- Integrate a real streaming system using Kafka or similar frameworks.  
+- Scale to multiple commodities and live market feeds.  
+- Connect to cloud-based data pipelines for real-time analytics.
