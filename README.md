@@ -5,6 +5,7 @@
 This project analyzes 5 years of historical gold and silver price data (2018–2023), exploring trends and statistical relationships between the two commodities.
 
 In addition to batch analysis, the project includes a **row-by-row simulation of streaming data** with artificial delays to mimic live updates. This allows experimentation with streaming concepts without the need for heavy infrastructure.
+
 ![Gold Price Analysis](gold.png)
 ![Gold Price Analysis](silver.png)
 
@@ -28,6 +29,11 @@ In addition to batch analysis, the project includes a **row-by-row simulation of
 - Difference between batch processing (full dataset at once) and row-wise streaming.  
 - Demonstrated basic streaming concepts in Python without using heavy frameworks.  
 - Built a minimal proof-of-concept pipeline for financial time-series analysis.
+
+Pearson Correlation Coefficient between Gold and Silver Prices: -0.5869
+This suggests that there is a moderate negative correlation between gold and silver prices. This means that as the price of gold tends to increase, the price of silver tends to decrease.
+The negative sign (-) indicates the direction of the relationship. In this case, it suggests an inverse relationship between gold and silver prices. When gold prices go up, silver prices tend to go down, and when gold prices go down, silver prices tend to go up.
+
 
 ---
 
