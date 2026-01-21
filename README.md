@@ -5,6 +5,8 @@
 This project analyzes 5 years of historical gold and silver price data (2018–2023), exploring trends and statistical relationships between the two commodities.
 
 In addition to batch analysis, the project includes a **row-by-row simulation of streaming data** with artificial delays to mimic live updates. This allows experimentation with streaming concepts without the need for heavy infrastructure.
+![Gold Price Analysis](gold.png)
+![Gold Price Analysis](silver.png)
 
 ---
 
